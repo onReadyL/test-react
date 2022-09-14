@@ -1,5 +1,5 @@
 import './App.css';
-import { UseDeferredValueTest } from './tests'
+import { UseDeferredValueTest, ContentTest } from './tests'
 import {list} from './mock/index';
 import { useEffect, useState } from 'react';
 
@@ -12,8 +12,10 @@ function App() {
    }, [a]);
   return (
     <div className="App">
-      <button onClick={() => {setA(a+1)}}>点击</button>
+      nihao
+      {/* <button onClick={() => {setA(a+1)}}>点击</button> */}
       {/* <UseDeferredValueTest names={list} /> */}
+      <ContentTest />
     </div>
   );
 }
